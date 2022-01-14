@@ -1,0 +1,146 @@
+body {
+	background-color: #f0ffff;
+}
+nav.navbar {
+	background-color: #1c4370;
+}
+.navbar-toggler {
+	color: #ffffff;
+}
+.navbar-nav {
+	font-size: 1.9em;
+}
+.navbar .navbar-nav a.nav-link {
+	font-family: 'Lora', sans-serif;
+	text-transform: uppercase;
+	margin: 5px 25px;
+}
+.navbar-brand {
+	margin: 5px 25px
+}
+h1 {
+	letter-spacing: 5px !important;
+	background-color: #daa520;
+	color: #ffe4b5;
+	font-family: 'Trebuchet MS', monospace;
+	font-size: 4em !important;
+	padding: 3% 3%;
+	border-top: 2px solid #556b2f;
+	border-bottom: 2px solid #556b2f;
+	font-weight: bolder !important;
+}
+h3 {
+	line-height: 1.5 !important;
+	background-color: #ffefd5;
+	color: #556b2f;
+	font-family: 'Rubik', sans-serif;
+	font-size: 2em !important;
+	padding: 0 3%;
+	font-weight: normal !important;
+}
+header {
+	border-bottom: 2pt dotted #556b2f;
+	background-color: #ffefd5;
+	margin: 0 5%;
+	text-align: center;
+	border-left: 1pt solid #556b2f;
+	border-right: 1pt solid #556b2f;
+	margin-top: 100px;
+}
+form {
+	margin: 3% 5%;
+	padding-top: 2%;
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.4em;
+}
+select {
+	width: 60%;
+}
+select:hover {
+	cursor: pointer;
+	border: 1px solid blue;
+}
+form section {
+	padding: 1%;
+	border-bottom: 0.3px #002435 dotted;
+}
+input[type="number"] {
+	width: 25%;
+	font-size: 1em;
+}
+form input:invalid {
+	padding: 1%;
+	border: 1px dotted red;
+}
+form input:valid {
+	padding: 1%;
+	border: 1px dotted green;
+}
+form section.use {
+	font-size: 1em;
+	border: none;
+}
+section.use-input {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+section.use-input span {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+input#use {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+}
+input#use:hover {
+	cursor: pointer;
+}
+.submit-btn {
+	border-radius: 1.2em;
+	background-color: #307081;
+	color: #bbe4a8;
+	padding: 0.8em 1.6em;
+	font-size: 1.3em;
+	transition: all 0.25s;
+	margin-top: 40px;
+	border-color: #0e5350;
+}
+.submit-btn:hover {
+	border-color: #156e6a;
+	color: #ffffff;
+	box-shadow: 0 0.5em 0.5em -0.4em #0e5350;
+	transform: translateY(-0.25em);
+	cursor: pointer;
+	margin-top: 40px;
+}
+
+.email a {
+	color: inherit;
+	text-decoration: underline;
+	transition: color 0.2s;
+}
+.email a:hover {
+	color: initial;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 3em !important;
+	}
+	h3 {
+		font-size: 1.5em !important;
+	}
+}
+@media (max-width: 546px) {
+	h1 {
+		font-size: 2em !important;
+	}
+	h3 {
+		font-size: 1em !important;
+	}
+}
