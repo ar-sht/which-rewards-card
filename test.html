@@ -11,7 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -39,8 +38,8 @@
         <h1><em>Take The Test</em></h1>
         <h3>This test will determine the best credit card for you based on your spending habits and preferences:</h3>
     </header>
-    <container>
-        <form action="results.html" method="get">
+    <div class="field">
+        <form>
             <section class="airport">
                 <label for="port">Which airport do you fly out of most?</label>
                 <select id="port" name="port" required>
@@ -56,29 +55,28 @@
                 </select>
             </section>
             <br><br>
-            <section class="air cost">
-                <label for="air cost">How much do you spend on airfare in a year?</label>
-                <span><br>$ </span><input type="number" name="air cost" id="air cost" min="0" max="100000" step="100"
-                    required>
+            <section class="air">
+                <label for="air">How much do you spend on airfare in a year?</label>
+                <span><br>$ </span><input type="number" name="air" id="air" min="0" max="100000" step="100" required>
             </section>
             <br><br>
-            <section class="hotel cost">
-                <label for="hotel cost">How much do you spend at hotels in a year?</label>
-                <span><br>$ </span><input type="number" name="hotel cost" id="hotel cost" min="0" max="100000"
+            <section class="hotel">
+                <label for="hotel">How much do you spend at hotels in a year?</label>
+                <span><br>$ </span><input type="number" name="hotel" id="hotel" min="0" max="100000"
                     step="100" required>
             </section>
             <br><br>
-            <section class="store cost">
-                <label for="store cost">How much do you spend at US Supermarkets in a year?
+            <section class="store">
+                <label for="store">How much do you spend at US Supermarkets in a year?
                 </label>
-                <span><br>$ </span><input type="number" name="store cost" id="store cost" min="0" max="100000"
+                <span><br>$ </span><input type="number" name="store" id="store" min="0" max="100000"
                     step="100" required>
             </section>
             <br><br>
-            <section class="dining cost">
-                <label for="dining cost">How much do you spend at restaurants in a year? (in-person and takeout)
+            <section class="dining">
+                <label for="dining">How much do you spend at restaurants in a year? (in-person and takeout)
                 </label>
-                <span><br>$ </span><input type="number" name="dining cost" id="dining cost" min="0" max="100000"
+                <span><br>$ </span><input type="number" name="dining" id="dining" min="0" max="100000"
                     step="100" required>
             </section>
             <br><br>
@@ -92,9 +90,9 @@
                     <span>100% airline rewards</span> <br><br>
                 </section>
             </section>
-            <button class="submit-btn" type="submit" id="submit">Get My Recommendations</button>
+            <button class="submit-btn" id="submit">Get My Recommendations</button>
         </form>
-    </container>
+    </div>
+    <script type="text/javascript" src="test.js"></script>
 </body>
-
 </html>
