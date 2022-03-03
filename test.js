@@ -965,6 +965,12 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   const chasePreferredLink = 'https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred'
   const chaseReserveLink = 'https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve'
 
+  const citiPremierLink = 'https://www.citi.com/credit-cards/citi-premier-credit-card'
+
+  const americanMileLink = 'https://www.citi.com/credit-cards/aadvantage-mile-up-credit-card'
+  const americanPlatinumLink = 'https://www.citi.com/credit-cards/citi-aadvantage-platinum-elite-credit-card'
+  const americanExecutiveLink = 'https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card'
+
   const deltaBlueLink = 'https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-blue-american-express-card/'
   const deltaGoldLink = 'https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/'
   const deltaPlatLink = 'https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/'
@@ -976,7 +982,8 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
 
   const unitedGatewayLink = 'https://creditcards.chase.com/travel-credit-cards/united/united-gateway'
   const unitedExplorerLink = 'https://creditcards.chase.com/travel-credit-cards/united/united-explorer'
-  const unitedQuestLink = 'https//creditcards.chase.com/travel'
+  const unitedQuestLink = 'https://creditcards.chase.com/travel-credit-cards/united/united-quest'
+  const unitedClubLink = 'https://creditcards.chase.com/travel-credit-cards/united/club-infinite'
 
   const alaskaMileageLink = 'https://www.alaskaair.com/content/mileage-plan'
   const americanAAdvantageLink = 'https://www.aa.com/i18n/aadvantage-program/aadvantage-program.jsp'
@@ -993,6 +1000,11 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   const hiltonHonorsLink = 'https://www.americanexpress.com/us/credit-cards/card/hilton-honors/'
   const hiltonSurpassLink = 'https://www.americanexpress.com/us/credit-cards/card/hilton-honors-surpass/'
   const hiltonAspireLink = 'https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/'
+
+  const hyattCardLink ='https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card'
+
+  const ihgTravelerLink = 'https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/traveler'
+  const ihgPremierLink = 'https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier'
   
   const marriottBoldLink = 'https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bold'
   const marriottBoundlessLink = 'https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless'
@@ -1524,595 +1536,333 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   creditCards[cardListSouthwestMarriott[20]] = `<a href=\"${southwestPremierLink}\">Southwest Rapid Rewards® Premier Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
   creditCards[cardListUnitedMarriott[20]] = `<a href=\"${southwestPremierLink}\">Southwest Rapid Rewards® Premier Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    21] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Gateway Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[21]] = `<a href=\"${unitedGatewayLink}\">United Gateway℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    22] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Explorer Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[22]] = `<a href=\"${unitedExplorerLink}\">United℠ Explorer Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    23] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Quest Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[23]] = `<a href=\"${unitedQuestLink}\">United Quest℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    24] = `<a href=\"${unitedLink}\">United Airlines MileagePlus®</a> Club Infinite Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[24]] = `<a href=\"${unitedClubLink}\">United Club℠ Infinite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    25] = `IHG Traveler Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    25] = `IHG Traveler Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    25] = `IHG Traveler Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    25] = `IHG Traveler Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    25] = `IHG Traveler Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    25] = `IHG Traveler Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    25] = `IHG Traveler Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    25] = `IHG Traveler Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    25] = `IHG Traveler Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    25] = `IHG Traveler Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    25] = `IHG Traveler Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    25] = `IHG Traveler Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    25] = `IHG Traveler Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    25] = `IHG Traveler Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    25] = `IHG Traveler Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    25] = `IHG Traveler Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    25] = `IHG Traveler Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    25] = `IHG Traveler Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    25] = `IHG Traveler Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    25] = `IHG Traveler Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    25] = `IHG Traveler Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    25] = `IHG Traveler Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    25] = `IHG Traveler Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    25] = `IHG Traveler Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[25]] = `<a href=\"${ihgTravelerLink}\">IHG® Rewards Club Traveler Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    26] = `IHG Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    26] = `IHG Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    26] = `IHG Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    26] = `IHG Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    26] = `IHG Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    26] = `IHG Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    26] = `IHG Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    26] = `IHG Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    26] = `IHG Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    26] = `IHG Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    26] = `IHG Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    26] = `IHG Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    26] = `IHG Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    26] = `IHG Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    26] = `IHG Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    26] = `IHG Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    26] = `IHG Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    26] = `IHG Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    26] = `IHG Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    26] = `IHG Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    26] = `IHG Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    26] = `IHG Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    26] = `IHG Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    26] = `IHG Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[26]] = `<a href=\"${ihgPremierLink}\">IHG® Rewards Club Premier Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    27] = `<a href=\"${hyattLink}\">World Of Hyatt®</a> Credit Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[27]] = `<a href=\"${hyattCardLink}\">World of Hyatt Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    28] = `Citi Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    28] = `Citi Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    28] = `Citi Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    28] = `Citi Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    28] = `Citi Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    28] = `Citi Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    28] = `Citi Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    28] = `Citi Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    28] = `Citi Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    28] = `Citi Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    28] = `Citi Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    28] = `Citi Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    28] = `Citi Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    28] = `Citi Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    28] = `Citi Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    28] = `Citi Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    28] = `Citi Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    28] = `Citi Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    28] = `Citi Premier Card - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    28] = `Citi Premier Card - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    28] = `Citi Premier Card - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    28] = `Citi Premier Card - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    28] = `Citi Premier Card - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    28] = `Citi Premier Card - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[28]] = `<a href=\"${citiPremierLink}\">Citi Premier® Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    29] = `<a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> MileUp Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[29]] = `<a href=\"${americanMileLink}\">American AAdvantage MileUp℠ Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    30] = `Citi AAdvantage Platinum Select World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[30]] = `<a href=\"${americanPlatinumLink}\">American AAdvantage® Platinum Select® World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAmericanIHG[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListDeltaIHG[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListJetBlueIHG[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListSouthwestIHG[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListUnitedIHG[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
-  cardListAlaskaHilton[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAmericanHilton[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListDeltaHilton[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListJetBlueHilton[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListSouthwestHilton[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListUnitedHilton[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
-  cardListAlaskaHyatt[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAmericanHyatt[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListDeltaHyatt[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListJetBlueHyatt[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListSouthwestHyatt[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListUnitedHyatt[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
-  cardListAlaskaMarriott[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListAmericanMarriott[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListDeltaMarriott[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListJetBlueMarriott[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListSouthwestMarriott[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  cardListUnitedMarriott[
-    31] = `Citi AAdvantage Executive World Elite Mastercard - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAlaskaIHG[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAmericanIHG[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListDeltaIHG[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListJetBlueIHG[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListSouthwestIHG[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListUnitedIHG[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${ihgLink}\">IHG® Rewards</a> rewards program`
+  creditCards[cardListAlaskaHilton[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAmericanHilton[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListDeltaHilton[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListJetBlueHilton[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListSouthwestHilton[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListUnitedHilton[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hiltonLink}\">Hilton Honors®</a> rewards program`
+  creditCards[cardListAlaskaHyatt[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAmericanHyatt[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListDeltaHyatt[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListJetBlueHyatt[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListSouthwestHyatt[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListUnitedHyatt[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${hyattLink}\">World Of Hyatt®</a> rewards program`
+  creditCards[cardListAlaskaMarriott[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${alaskaMileageLink}\">Alaska Airlines® Mileage Plan™</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListAmericanMarriott[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${americanAAdvantageLink}\">American Airlines AAdvantage®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListDeltaMarriott[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListJetBlueMarriott[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListSouthwestMarriott[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  creditCards[cardListUnitedMarriott[31]] = `<a href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
 
-  cardListAlaskaIHG.sort()
+  const numberSorter = (a, b) => a - b
+
+  cardListAlaskaIHG.sort(numberSorter)
   cardListAlaskaIHG.reverse()
-  cardListAmericanIHG.sort()
+  cardListAmericanIHG.sort(numberSorter)
   cardListAmericanIHG.reverse()
-  cardListDeltaIHG.sort()
+  cardListDeltaIHG.sort(numberSorter)
   cardListDeltaIHG.reverse()
-  cardListJetBlueIHG.sort()
+  cardListJetBlueIHG.sort(numberSorter)
   cardListJetBlueIHG.reverse()
-  cardListSouthwestIHG.sort()
+  cardListSouthwestIHG.sort(numberSorter)
   cardListSouthwestIHG.reverse()
-  cardListUnitedIHG.sort()
+  cardListUnitedIHG.sort(numberSorter)
   cardListUnitedIHG.reverse()
 
-  cardListAlaskaHilton.sort()
+  cardListAlaskaHilton.sort(numberSorter)
   cardListAlaskaHilton.reverse()
-  cardListAmericanHilton.sort()
+  cardListAmericanHilton.sort(numberSorter)
   cardListAmericanHilton.reverse()
-  cardListDeltaHilton.sort()
+  cardListDeltaHilton.sort(numberSorter)
   cardListDeltaHilton.reverse()
-  cardListJetBlueHilton.sort()
+  cardListJetBlueHilton.sort(numberSorter)
   cardListJetBlueHilton.reverse()
-  cardListSouthwestHilton.sort()
+  cardListSouthwestHilton.sort(numberSorter)
   cardListSouthwestHilton.reverse()
-  cardListUnitedHilton.sort()
+  cardListUnitedHilton.sort(numberSorter)
   cardListUnitedHilton.reverse()
 
-  cardListAlaskaHyatt.sort()
+  cardListAlaskaHyatt.sort(numberSorter)
   cardListAlaskaHyatt.reverse()
-  cardListAmericanHyatt.sort()
+  cardListAmericanHyatt.sort(numberSorter)
   cardListAmericanHyatt.reverse()
-  cardListDeltaHyatt.sort()
+  cardListDeltaHyatt.sort(numberSorter)
   cardListDeltaHyatt.reverse()
-  cardListJetBlueHyatt.sort()
+  cardListJetBlueHyatt.sort(numberSorter)
   cardListJetBlueHyatt.reverse()
-  cardListSouthwestHyatt.sort()
+  cardListSouthwestHyatt.sort(numberSorter)
   cardListSouthwestHyatt.reverse()
-  cardListUnitedHyatt.sort()
+  cardListUnitedHyatt.sort(numberSorter)
   cardListUnitedHyatt.reverse()
 
-  cardListAlaskaMarriott.sort()
+  cardListAlaskaMarriott.sort(numberSorter)
   cardListAlaskaMarriott.reverse()
-  cardListAmericanMarriott.sort()
+  cardListAmericanMarriott.sort(numberSorter)
   cardListAmericanMarriott.reverse()
-  cardListDeltaMarriott.sort()
+  cardListDeltaMarriott.sort(numberSorter)
   cardListDeltaMarriott.reverse()
-  cardListJetBlueMarriott.sort()
+  cardListJetBlueMarriott.sort(numberSorter)
   cardListJetBlueMarriott.reverse()
-  cardListSouthwestMarriott.sort()
+  cardListSouthwestMarriott.sort(numberSorter)
   cardListSouthwestMarriott.reverse()
-  cardListUnitedMarriott.sort()
+  cardListUnitedMarriott.sort(numberSorter)
   cardListUnitedMarriott.reverse()
 
   let cards = []
@@ -2130,7 +1880,7 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
       }
     }
 
-  cards.sort()
+  cards.sort(numberSorter)
 
   // let cards_budget = []
   // for item in [cardListAlaskaIHG[4: 8], cardListAlaskaIHG[10: 12], cardListAlaskaIHG[13: 15],
@@ -2240,11 +1990,9 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   // TODO Do the above for budget and free cards
 
   // TODO Post to html following prints:
-  let first = creditCards[cards[cards.length - 1]]
-  cards.pop()
-  let second = creditCards[cards[cards.length - 1]]
-  cards.pop()
-  let third = creditCards[cards[cards.length - 1]]
+  let first = creditCards[cards.pop()]
+  let second = creditCards[cards.pop()]
+  let third = creditCards[cards.pop()]
 
   // creditCards_budget = deepcopy(creditCards)
   // first_budget = creditCards_budget[cards_budget[0]]
@@ -2254,5 +2002,5 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   // third_budget = creditCards_budget[cards_budget[2]]
 
   document.querySelector('header').innerHTML = `<h1>Your Results</h1><h3>Based on your input, these are the best rewards cards for you:</h3>`
-  document.querySelector('div.field').innerHTML += `<ol><li>${first}</li><li>${second}</li><li>${third}</li></ol>`
+  document.querySelector('div.field').innerHTML = `<ol><li>${first}</li><li>${second}</li><li>${third}</li></ol>`
 })
