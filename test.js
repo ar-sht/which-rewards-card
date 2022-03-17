@@ -1975,5 +1975,5 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   // third_budget = creditCards_budget[cards_budget[2]]
 
   document.querySelector('header').innerHTML = `<h1>Your Results</h1><h3>Based on your input, these are the best rewards cards for you:</h3>`
-  document.querySelector('div.field').innerHTML = `<ol class="results"><li>${first}</li><li>${second}</li><li>${third}</li></ol>`
+  document.querySelector('div.field').innerHTML = `<ol class="results"><li>${first}</li><li>${second}</li><li>${third}</li></ol>` + "<center><a href=\"test.html\"><button class=\"submit-btn\">Return to test</button></a><br><span class=\"hub-support\">(Your results will be lost cause I don't know how to implement cookies/databases)</span></center>t"
 })
