@@ -117,7 +117,7 @@ input#use:hover {
 .submit-btn {
 	margin-top: 5%;
 	color: rgba(0, 36, 53, 1);
-	border-color: black;
+	border-color: rgba(0, 36, 53, 1);
 	background-color: #f8fcff;
 	border-radius: 0.8em;
 	padding: 2% 3%;
@@ -125,9 +125,10 @@ input#use:hover {
 }
 
 .submit-btn:hover {
-	color: rgba(28, 67, 112, 0.95);
-	border-color: rgba(28, 67, 112, 0.95);
-	background-color: #dddddd;
+	cursor: pointer;
+	color: #f8fcff;
+	border-color: rgba(0, 36, 53, 1);
+	background-color: rgba(0, 36, 53, 1);
 }
 
 div.field {

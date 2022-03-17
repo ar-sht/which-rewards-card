@@ -11,16 +11,16 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   const dining = Number(document.querySelector('#dining').value)
   const weight = Number(document.querySelector('#use').value)/10
 
-  let ihg = 1
-  let hilton = 1
-  let hyatt = 1
-  let marriott = 1
-  let alaska = 1
-  let american = 1
-  let delta = 1
-  let jetblue = 1
-  let southwest = 1
-  let united = 1
+  let ihg
+  let hilton
+  let hyatt
+  let marriott
+  let alaska
+  let american
+  let delta
+  let jetblue
+  let southwest
+  let united
 
   // TODO Ifs for each supported airport
 
@@ -169,52 +169,52 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
 
   function amexPlat(air, hotel, dining, store){
     if (dining <= 23_000) {
-      return dining * 10 + (air + hotel) * 5 + store - 695 * 100 + 15_000 + 800 * 100
+      return dining * 10 + (air + hotel) * 5 + store - 695 * 100 + 10_000 + 600 * 100
     } else {
-    return (dining - 23_000) + 230_000 + (air + hotel) * 5 + store - 695 * 100 + 15_000 + 800 * 100
+    return (dining - 23_000) + 230_000 + (air + hotel) * 5 + store - 695 * 100 + 10_000 + 600 * 100
     }
   }
 
 
   function amexGold(air, hotel, dining, store) {
     if (store <= 25_000) {
-      return dining * 4 + store * 4 + air * 3 + hotel - 250 * 100 + 320 * 100
+      return dining * 4 + store * 4 + air * 3 + hotel - 250 * 100 + 270 * 100
     } else {
-    return 100_000 + dining * 4 + (store - 25_000) * 4 + air * 3 + hotel - 250 * 100 + 320 * 100
+    return 100_000 + dining * 4 + (store - 25_000) * 4 + air * 3 + hotel - 250 * 100 + 270 * 100
     }
   }
 
 
   function amexGreen(air, hotel, dining, store) {
-    return dining * 3 + air * 1.5 + (air + hotel) * 3 + store - 150 * 100 + 200 * 100
+    return dining * 3 + air * 1.5 + (air + hotel) * 3 + store - 150 * 100 + 180 * 100
   }
 
 
   function amexEd(air, hotel, dining, store) {
     if (store <= 6_000) {
-      return (dining + store * 2 + air + hotel) * (11 / 10) + 10 * 100
+      return (dining + store * 2 + air + hotel) * (11 / 10) + 5 * 100
     } else {
-    return (12_000 + dining + (store - 6_000) + air + hotel) * (11 / 10) + 10 * 100
+    return (12_000 + dining + (store - 6_000) + air + hotel) * (11 / 10) + 5 * 100
     }
   }
 
 
   function amexEdp(air, hotel, dining, store) {
     if (store <= 6_000) {
-      return (dining + store * 4 + air + hotel) * (12.5 / 10) - 95 * 100 + 80 * 100
+      return (dining + store * 4 + air + hotel) * (12.5 / 10) - 95 * 100 + 60 * 100
     } else {
-    return (12_000 + dining + (store - 6_000) + air + hotel + store) * (12.5 / 10) - 95 * 100 + 80 * 100
+    return (12_000 + dining + (store - 6_000) + air + hotel + store) * (12.5 / 10) - 95 * 100 + 60 * 100
     }
   }
 
 
   function amexBlue(air, hotel, dining, store) {
-    return dining + store * 1.5 + air + hotel + 10 * 100
+    return dining + store * 1.5 + air + hotel + 8 * 100
   }
 
 
   function delBlue(air, hotel, dining, store) {
-    return dining * 2 + air * 2 + 1.5 * store + hotel + 20 * 100
+    return dining * 2 + air * 2 + 1.5 * store + hotel + 18 * 100
   }
 
 
@@ -405,7 +405,9 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   let cardListSouthwestMarriott = []
   let cardListUnitedMarriott = []
 
-  // Amex
+  let score
+
+  // amex
   for (score of cardList.slice(0, 6)) {
   let ih = 0
   let hil = hilton * 2
@@ -447,7 +449,7 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   }
 
   // Delta
-  for (score of cardList.slice(6, 10)) {
+  for (let score of cardList.slice(6, 10)) {
   let ih = 0
   let hil = 0
   let hy = 0
@@ -854,104 +856,6 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   cardListJetBlueMarriott.push(weightedAvg(mar, jb, weight) * score)
   cardListSouthwestMarriott.push(weightedAvg(mar, sw, weight) * score)
   cardListUnitedMarriott.push(weightedAvg(mar, un, weight) * score)
-  }
-
-  let num
-  for (num of cardListAlaskaIHG) {
-    cardListAlaskaIHG[cardListAlaskaIHG.indexOf(
-      num)] += 0.000000000001 * (cardListAlaskaIHG.indexOf(num) + 1)
-  }
-  for (num of cardListAmericanIHG) {
-    cardListAmericanIHG[cardListAmericanIHG.indexOf(
-      num)] += 0.000000000002 * (cardListAmericanIHG.indexOf(num) + 1)
-  }
-  for (num of cardListDeltaIHG) {
-    cardListDeltaIHG[cardListDeltaIHG.indexOf(
-      num)] += 0.000000000003 * (cardListDeltaIHG.indexOf(num) + 1)
-  }
-  for (num of cardListJetBlueIHG) {
-    cardListJetBlueIHG[cardListJetBlueIHG.indexOf(
-      num)] += 0.000000000004 * (cardListJetBlueIHG.indexOf(num) + 1)
-  }
-  for (num of cardListSouthwestIHG) {
-    cardListSouthwestIHG[cardListSouthwestIHG.indexOf(
-      num)] += 0.000000000005 * (cardListSouthwestIHG.indexOf(num) + 1)
-  }
-  for (num of cardListUnitedIHG) {
-    cardListUnitedIHG[cardListUnitedIHG.indexOf(
-      num)] += 0.000000000006 * (cardListUnitedIHG.indexOf(num) + 1)
-  }
-  for (num of cardListAlaskaHilton) {
-    cardListAlaskaHilton[cardListAlaskaHilton.indexOf(
-      num)] += 0.000000000007 * (cardListAlaskaHilton.indexOf(num) + 3)
-  }
-  for (num of cardListAmericanHilton) {
-    cardListAmericanHilton[cardListAmericanHilton.indexOf(
-      num)] += 0.000000000008 * (cardListAmericanHilton.indexOf(num) + 6)
-  }
-  for (num of cardListDeltaHilton) {
-    cardListDeltaHilton[cardListDeltaHilton.indexOf(
-      num)] += 0.000000000009 * (cardListDeltaHilton.indexOf(num) + 9)
-  }
-  for (num of cardListJetBlueHilton) {
-    cardListJetBlueHilton[cardListJetBlueHilton.indexOf(
-      num)] += 0.000000000010 * (cardListJetBlueHilton.indexOf(num) + 12)
-  }
-  for (num of cardListSouthwestHilton) {
-    cardListSouthwestHilton[cardListSouthwestHilton.indexOf(
-      num)] += 0.000000000011 * (cardListSouthwestHilton.indexOf(num) + 15)
-  }
-  for (num of cardListUnitedHilton) {
-    cardListUnitedHilton[cardListUnitedHilton.indexOf(
-      num)] += 0.000000000012 * (cardListUnitedHilton.indexOf(num) + 18)
-  }
-  for (num of cardListAlaskaHyatt) {
-    cardListAlaskaHyatt[cardListAlaskaHyatt.indexOf(
-      num)] += 0.000000000013 * (cardListAlaskaHyatt.indexOf(num) + 1)
-  }
-  for (num of cardListAmericanHyatt) {
-    cardListAmericanHyatt[cardListAmericanHyatt.indexOf(
-      num)] += 0.000000000014 * (cardListAmericanHyatt.indexOf(num) + 1)
-  }
-  for (num of cardListDeltaHyatt) {
-    cardListDeltaHyatt[cardListDeltaHyatt.indexOf(
-      num)] += 0.000000000015 * (cardListDeltaHyatt.indexOf(num) + 1)
-  }
-  for (num of cardListJetBlueHyatt) {
-    cardListJetBlueHyatt[cardListJetBlueHyatt.indexOf(
-      num)] += 0.000000000016 * (cardListJetBlueHyatt.indexOf(num) + 1)
-  }
-  for (num of cardListSouthwestHyatt) {
-    cardListSouthwestHyatt[cardListSouthwestHyatt.indexOf(
-      num)] += 0.000000000017 * (cardListSouthwestHyatt.indexOf(num) + 1)
-  }
-  for (num of cardListUnitedHyatt) {
-    cardListUnitedHyatt[cardListUnitedHyatt.indexOf(
-      num)] += 0.000000000018 * (cardListUnitedHyatt.indexOf(num) + 1)
-  }
-  for (num of cardListAlaskaMarriott) {
-    cardListAlaskaMarriott[cardListAlaskaMarriott.indexOf(
-      num)] += 0.000000000019 * (cardListAlaskaMarriott.indexOf(num) + 1)
-  }
-  for (num of cardListAmericanMarriott) {
-    cardListAmericanMarriott[cardListAmericanMarriott.indexOf(
-      num)] += 0.000000000020 * (cardListAmericanMarriott.indexOf(num) + 1)
-  }
-  for (num of cardListDeltaMarriott) {
-    cardListDeltaMarriott[cardListDeltaMarriott.indexOf(
-      num)] += 0.000000000021 * (cardListDeltaMarriott.indexOf(num) + 1)
-  }
-  for (num of cardListJetBlueMarriott) {
-    cardListJetBlueMarriott[cardListJetBlueMarriott.indexOf(
-      num)] += 0.000000000022 * (cardListJetBlueMarriott.indexOf(num) + 1)
-  }
-  for (num of cardListSouthwestMarriott) {
-    cardListSouthwestMarriott[cardListSouthwestMarriott.indexOf(
-      num)] += 0.000000000023 * (cardListSouthwestMarriott.indexOf(num) + 1)
-  }
-  for (num of cardListUnitedMarriott) {
-    cardListUnitedMarriott[cardListUnitedMarriott.indexOf(
-      num)] += 0.000000000024 * (cardListUnitedMarriott.indexOf(num) + 1)
   }
 
   // Creates links for each card and rewards program
@@ -1841,78 +1745,43 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   creditCardsAmerExec[cardListDeltaMarriott[31]] = `<a target=\"blank\" href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a target=\"blank\" href=\"${deltaSkyMilesLink}\">Delta Airlines SkyMiles®</a> rewards program and the <a target=\"blank\" href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
   creditCardsAmerExec[cardListJetBlueMarriott[31]] = `<a target=\"blank\" href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a target=\"blank\" href=\"${jetblueLink}\">JetBlue Airways TrueBlue®</a> rewards program and the <a target=\"blank\" href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
   creditCardsAmerExec[cardListSouthwestMarriott[31]] = `<a target=\"blank\" href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a target=\"blank\" href=\"${southwestLink}\">Southwest Airlines Rapid Rewards®</a> rewards program and the <a target=\"blank\" href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-  creditCards[cardListUnitedMarriott[31]] = `<a target=\"blank\" href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a target=\"blank\" href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a target=\"blank\" href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
-
-  const numberSorter = (a, b) => a - b
-
-  cardListAlaskaIHG.sort(numberSorter)
-  cardListAlaskaIHG.reverse()
-  cardListAmericanIHG.sort(numberSorter)
-  cardListAmericanIHG.reverse()
-  cardListDeltaIHG.sort(numberSorter)
-  cardListDeltaIHG.reverse()
-  cardListJetBlueIHG.sort(numberSorter)
-  cardListJetBlueIHG.reverse()
-  cardListSouthwestIHG.sort(numberSorter)
-  cardListSouthwestIHG.reverse()
-  cardListUnitedIHG.sort(numberSorter)
-  cardListUnitedIHG.reverse()
-
-  cardListAlaskaHilton.sort(numberSorter)
-  cardListAlaskaHilton.reverse()
-  cardListAmericanHilton.sort(numberSorter)
-  cardListAmericanHilton.reverse()
-  cardListDeltaHilton.sort(numberSorter)
-  cardListDeltaHilton.reverse()
-  cardListJetBlueHilton.sort(numberSorter)
-  cardListJetBlueHilton.reverse()
-  cardListSouthwestHilton.sort(numberSorter)
-  cardListSouthwestHilton.reverse()
-  cardListUnitedHilton.sort(numberSorter)
-  cardListUnitedHilton.reverse()
-
-  cardListAlaskaHyatt.sort(numberSorter)
-  cardListAlaskaHyatt.reverse()
-  cardListAmericanHyatt.sort(numberSorter)
-  cardListAmericanHyatt.reverse()
-  cardListDeltaHyatt.sort(numberSorter)
-  cardListDeltaHyatt.reverse()
-  cardListJetBlueHyatt.sort(numberSorter)
-  cardListJetBlueHyatt.reverse()
-  cardListSouthwestHyatt.sort(numberSorter)
-  cardListSouthwestHyatt.reverse()
-  cardListUnitedHyatt.sort(numberSorter)
-  cardListUnitedHyatt.reverse()
-
-  cardListAlaskaMarriott.sort(numberSorter)
-  cardListAlaskaMarriott.reverse()
-  cardListAmericanMarriott.sort(numberSorter)
-  cardListAmericanMarriott.reverse()
-  cardListDeltaMarriott.sort(numberSorter)
-  cardListDeltaMarriott.reverse()
-  cardListJetBlueMarriott.sort(numberSorter)
-  cardListJetBlueMarriott.reverse()
-  cardListSouthwestMarriott.sort(numberSorter)
-  cardListSouthwestMarriott.reverse()
-  cardListUnitedMarriott.sort(numberSorter)
-  cardListUnitedMarriott.reverse()
-
+  creditCardsAmerExec[cardListUnitedMarriott[31]] = `<a target=\"blank\" href=\"${americanExecutiveLink}\">American AAdvantage® Executive World Elite Card</a> - Using the <a target=\"blank\" href=\"${unitedLink}\">United Airlines MileagePlus®</a> rewards program and the <a target=\"blank\" href=\"${marriottLink}\">Marriott Bonvoy® Rewards</a> rewards program`
+  
   let cards = []
-  let item
-  for (item of [cardListAlaskaIHG, cardListAmericanIHG, cardListDeltaIHG, cardListJetBlueIHG, cardListSouthwestIHG,
-    cardListUnitedIHG,
-    cardListAlaskaHilton, cardListAmericanHilton, cardListDeltaHilton, cardListJetBlueHilton, cardListSouthwestHilton,
-    cardListUnitedHilton,
-    cardListAlaskaHyatt, cardListAmericanHyatt, cardListDeltaHyatt, cardListJetBlueHyatt, cardListSouthwestHyatt, cardListUnitedHyatt,
-    cardListAlaskaMarriott, cardListAmericanMarriott, cardListDeltaMarriott, cardListJetBlueMarriott, cardListSouthwestMarriott,
-    cardListUnitedMarriott]) {
-      let value
-      for (value of item) {
-        cards.push(value)
+
+  let creditCards = [creditCardsAmexPlat, creditCardsAmexGold, creditCardsAmexGreen, creditCardsAmexED, creditCardsAmexEDP, 
+    creditCardsAmexBlue, creditCardsDeltaBlue, creditCardsDeltaGold, creditCardsDeltaPlat, creditCardsDeltaRes, creditCardsHilHon, 
+    creditCardsHilSur, creditCardsHilAsp, creditCardsMarBold, creditCardsMarBound, creditCardsMarBril, creditCardsChaseSapPref, 
+    creditCardsChaseSapRes, creditCardsSWPlus, creditCardsSWPrem, creditCardsSWPri, creditCardsUnitedGate, creditCardsUnitedExp, 
+    creditCardsUnitedQuest, creditCardsUnitedClubInf, creditCardsIHGTrav, creditCardsIHGPrem, creditCardsHyatt, creditCardsAmerMile, 
+    creditCardsAmerWorldElite, creditCardsAmerExec]
+
+  for (dict in creditCards) {
+    let creditCard = creditCards[dict]
+    for (let value in creditCard) {
+      if (creditCard.hasOwnProperty(value) && value !== NaN && value > 0) {
+        cards.push(Number(value))
       }
     }
+  }
 
-  cards.sort(numberSorter)
+  // let item
+  // for (item of [cardListAmexPlat, cardListAmexGold, cardListDeltaIHG, cardListJetBlueIHG, cardListSouthwestIHG,
+  //   cardListUnitedIHG,
+  //   cardListAlaskaHilton, cardListAmericanHilton, cardListDeltaHilton, cardListJetBlueHilton, cardListSouthwestHilton,
+  //   cardListUnitedHilton,
+  //   cardListAlaskaHyatt, cardListAmericanHyatt, cardListDeltaHyatt, cardListJetBlueHyatt, cardListSouthwestHyatt, cardListUnitedHyatt,
+  //   cardListAlaskaMarriott, cardListAmericanMarriott, cardListDeltaMarriott, cardListJetBlueMarriott, cardListSouthwestMarriott,
+  //   cardListUnitedMarriott]) {
+  //     let value
+  //     for (value of item) {
+  //       if (value !== NaN && value > 0) {
+  //         cards.push(value)
+  //       }
+  //     }
+  //   }
+
+  cards.sort((a, b) => a - b)
 
   // let cards_budget = []
   // for item in [cardListAlaskaIHG[4: 8], cardListAlaskaIHG[10: 12], cardListAlaskaIHG[13: 15],
@@ -2022,74 +1891,76 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   // TODO Do the above for budget and free cards
 
   let topThree = []
+  let topCardScores = []
   for (let i = 0; i < 3; i++) {
-    let finalCard = cards.pop()
-    if (finalCard in creditCardsAmexPlat) {
-      topThree.append(creditCardsAmexPlat[finalCard])
-    } else if (finalCard in creditCardsAmexGold) {
-      topThree.append(creditCardsAmexGold[finalCard])
-    } else if (finalCard in creditCardsAmexGreen) {
-      topThree.append(creditCardsAmexGreen[finalCard])
-    } else if (finalCard in creditCardsAmexED) {
-      topThree.append(creditCardsAmexED[finalCard])
-    } else if (finalCard in creditCardsAmexEDP) {
-      topThree.append(creditCardsAmexEDP[finalCard])
-    } else if (finalCard in creditCardsAmexBlue) {
-      topThree.append(creditCardsAmexBlue[finalCard])
-    } else if (finalCard in creditCardsDeltaBlue) {
-      topThree.append(creditCardsDeltaBlue[finalCard])
-    } else if (finalCard in creditCardsDeltaGold) {
-      topThree.append(creditCardsDeltaGold[finalCard])
-    } else if (finalCard in creditCardsDeltaGold) {
-      topThree.append(creditCardsDeltaGold[finalCard])
-    } else if (finalCard in creditCardsDeltaPlat) {
-      topThree.append(creditCardsDeltaPlat[finalCard])
-    } else if (finalCard in creditCardsDeltaRes) {
-      topThree.append(creditCardsDeltaRes[finalCard])
-    } else if (finalCard in creditCardsHilHon) {
-      topThree.append(creditCardsHilHon[finalCard])
-    } else if (finalCard in creditCardsHilSur) {
-      topThree.append(creditCardsHilSur[finalCard])
-    } else if (finalCard in creditCardsHilAsp) {
-      topThree.append(creditCardsHilAsp[finalCard])
-    } else if (finalCard in creditCardsMarBold) {
-      topThree.append(creditCardsMarBold[finalCard])
-    } else if (finalCard in creditCardsMarBound) {
-      topThree.append(creditCardsMarBound[finalCard])
-    } else if (finalCard in creditCardsMarBril) {
-      topThree.append(creditCardsMarBril[finalCard])
-    } else if (finalCard in creditCardsChaseSapPref) {
-      topThree.append(creditCardsChaseSapPref[finalCard])
-    } else if (finalCard in creditCardsChaseSapRes) {
-      topThree.append(creditCardsChaseSapRes[finalCard])
-    } else if (finalCard in creditCardsSWPlus) {
-      topThree.append(creditCardsSWPlus[finalCard])
-    } else if (finalCard in creditCardsSWPrem) {
-      topThree.append(creditCardsSWPrem[finalCard])
-    } else if (finalCard in creditCardsSWPri) {
-      topThree.append(creditCardsSWPri[finalCard])
-    } else if (finalCard in creditCardsUnitedGate) {
-      topThree.append(creditCardsUnitedGate[finalCard])
-    } else if (finalCard in creditCardsUnitedExp) {
-      topThree.append(creditCardsUnitedExp[finalCard])
-    } else if (finalCard in creditCardsUnitedQuest) {
-      topThree.append(creditCardsUnitedQuest[finalCard])
-    } else if (finalCard in creditCardsUnitedClubInf) {
-      topThree.append(creditCardsUnitedClubInf[finalCard])
-    } else if (finalCard in creditCardsIHGTrav) {
-      topThree.append(creditCardsIHGTrav[finalCard])
-    } else if (finalCard in creditCardsIHGPrem) {
-      topThree.append(creditCardsIHGPrem[finalCard])
-    } else if (finalCard in creditCardsHyatt) {
-      topThree.append(creditCardsHyatt[finalCard])
-    } else if (finalCard in creditCardsCitiPrem) {
-      topThree.append(creditCardsCitiPrem[finalCard])
-    } else if (finalCard in creditCardsAmerMile) {
-      topThree.append(creditCardsAmerMile[finalCard])
-    } else if (finalCard in creditCardsAmerWorldElite) {
-      topThree.append(creditCardsAmerWorldElite[finalCard])
-    } else if (finalCard in creditCardsAmerExec) {
-      topThree.append(creditCardsAmerExec[finalCard])
+    topCardScores.push(cards.pop())
+    if (topCardScores[i] in creditCardsAmexPlat && !(topCardScores[i-1] in creditCardsAmexPlat || topCardScores[i-2] in creditCardsAmexPlat)) {
+      topThree.push(creditCardsAmexPlat[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmexGold && !(topCardScores[i-1] in creditCardsAmexGold || topCardScores[i-2] in creditCardsAmexGold)) {
+      topThree.push(creditCardsAmexGold[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmexGreen && !(topCardScores[i-1] in creditCardsAmexGreen || topCardScores[i-2] in creditCardsAmexGreen)) {
+      topThree.push(creditCardsAmexGreen[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmexED && !(topCardScores[i-1] in creditCardsAmexED || topCardScores[i-2] in creditCardsAmexED)) {
+      topThree.push(creditCardsAmexED[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmexEDP && !(topCardScores[i-1] in creditCardsAmexEDP || topCardScores[i-2] in creditCardsAmexEDP)) {
+      topThree.push(creditCardsAmexEDP[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmexBlue && !(topCardScores[i-1] in creditCardsAmexBlue || topCardScores[i-2] in creditCardsAmexBlue)) {
+      topThree.push(creditCardsAmexBlue[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsDeltaBlue && !(topCardScores[i-1] in creditCardsDeltaBlue || topCardScores[i-2] in creditCardsDeltaBlue)) {
+      topThree.push(creditCardsDeltaBlue[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsDeltaGold && !(topCardScores[i-1] in creditCardsDeltaGold || topCardScores[i-2] in creditCardsDeltaGold)) {
+      topThree.push(creditCardsDeltaGold[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsDeltaPlat && !(topCardScores[i-1] in creditCardsDeltaPlat || topCardScores[i-2] in creditCardsDeltaPlat)) {
+      topThree.push(creditCardsDeltaPlat[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsDeltaRes && !(topCardScores[i-1] in creditCardsDeltaRes || topCardScores[i-2] in creditCardsDeltaRes)) {
+      topThree.push(creditCardsDeltaRes[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsHilHon && !(topCardScores[i-1] in creditCardsHilHon || topCardScores[i-2] in creditCardsHilHon)) {
+      topThree.push(creditCardsHilHon[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsHilSur && !(topCardScores[i-1] in creditCardsHilSur || topCardScores[i-2] in creditCardsHilSur)) {
+      topThree.push(creditCardsHilSur[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsHilAsp && !(topCardScores[i-1] in creditCardsHilAsp || topCardScores[i-2] in creditCardsHilAsp)) {
+      topThree.push(creditCardsHilAsp[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsMarBold && !(topCardScores[i-1] in creditCardsMarBold || topCardScores[i-2] in creditCardsMarBold)) {
+      topThree.push(creditCardsMarBold[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsMarBound && !(topCardScores[i-1] in creditCardsMarBound || topCardScores[i-2] in creditCardsMarBound)) {
+      topThree.push(creditCardsMarBound[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsMarBril && !(topCardScores[i-1] in creditCardsMarBril || topCardScores[i-2] in creditCardsMarBril)) {
+      topThree.push(creditCardsMarBril[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsChaseSapPref && !(topCardScores[i-1] in creditCardsChaseSapPref || topCardScores[i-2] in creditCardsChaseSapPref)) {
+      topThree.push(creditCardsChaseSapPref[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsChaseSapRes && !(topCardScores[i-1] in creditCardsChaseSapRes || topCardScores[i-2] in creditCardsChaseSapRes)) {
+      topThree.push(creditCardsChaseSapRes[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsSWPlus && !(topCardScores[i-1] in creditCardsSWPlus || topCardScores[i-2] in creditCardsSWPlus)) {
+      topThree.push(creditCardsSWPlus[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsSWPrem && !(topCardScores[i-1] in creditCardsSWPrem || topCardScores[i-2] in creditCardsSWPrem)) {
+      topThree.push(creditCardsSWPrem[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsSWPri && !(topCardScores[i-1] in creditCardsSWPri || topCardScores[i-2] in creditCardsSWPri)) {
+      topThree.push(creditCardsSWPri[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsUnitedGate && !(topCardScores[i-1] in creditCardsUnitedGate || topCardScores[i-2] in creditCardsUnitedGate)) {
+      topThree.push(creditCardsUnitedGate[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsUnitedExp && !(topCardScores[i-1] in creditCardsUnitedExp || topCardScores[i-2] in creditCardsUnitedExp)) {
+      topThree.push(creditCardsUnitedExp[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsUnitedQuest && !(topCardScores[i-1] in creditCardsUnitedQuest || topCardScores[i-2] in creditCardsUnitedQuest)) {
+      topThree.push(creditCardsUnitedQuest[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsUnitedClubInf && !(topCardScores[i-1] in creditCardsUnitedClubInf || topCardScores[i-2] in creditCardsUnitedClubInf)) {
+      topThree.push(creditCardsUnitedClubInf[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsIHGTrav && !(topCardScores[i-1] in creditCardsIHGTrav || topCardScores[i-2] in creditCardsIHGTrav)) {
+      topThree.push(creditCardsIHGTrav[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsIHGPrem && !(topCardScores[i-1] in creditCardsIHGPrem || topCardScores[i-2] in creditCardsIHGPrem)) {
+      topThree.push(creditCardsIHGPrem[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsHyatt && !(topCardScores[i-1] in creditCardsHyatt || topCardScores[i-2] in creditCardsHyatt)) {
+      topThree.push(creditCardsHyatt[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsCitiPrem && !(topCardScores[i-1] in creditCardsCitiPrem || topCardScores[i-2] in creditCardsCitiPrem)) {
+      topThree.push(creditCardsCitiPrem[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmerMile && !(topCardScores[i-1] in creditCardsAmerMile || topCardScores[i-2] in creditCardsAmerMile)) {
+      topThree.push(creditCardsAmerMile[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmerWorldElite && !(topCardScores[i-1] in creditCardsAmerWorldElite || topCardScores[i-2] in creditCardsAmerWorldElite)) {
+      topThree.push(creditCardsAmerWorldElite[topCardScores[i]])
+    } else if (topCardScores[i] in creditCardsAmerExec && !(topCardScores[i-1] in creditCardsAmerExec || topCardScores[i-2] in creditCardsAmerExec)) {
+      topThree.push(creditCardsAmerExec[topCardScores[i]])
+    }
+    if ((topThree[i] === undefined)) {
+      i--
     }
   }
   let first = topThree[0]
