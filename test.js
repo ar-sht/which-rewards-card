@@ -3,7 +3,7 @@ function weightedAvg(hotel, airline, weight) {
 }
 
 
-document.querySelector('.submit-btn').addEventListener('click', function () {
+document.querySelector('form').addEventListener('submit', function (e) {
   const port = document.querySelector('#port').value
   const air = Number(document.querySelector('#air').value)
   const hotel = Number(document.querySelector('#hotel').value)
@@ -1975,5 +1975,5 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
   // third_budget = creditCards_budget[cards_budget[2]]
 
   document.querySelector('header').innerHTML = `<h1>Your Results</h1><h3>Based on your input, these are the best rewards cards for you:</h3>`
-  document.querySelector('div.field').innerHTML = `<ol class="results"><li>${first}</li><li>${second}</li><li>${third}</li></ol>` + "<center><a href=\"test.html\"><button class=\"submit-btn\">Return to test</button></a><br><span class=\"hub-support\">(Your results will be lost cause I don't know how to implement cookies/databases)</span></center>t"
+  document.querySelector('div.field').innerHTML = `<ol class="results"><li>${first}</li><li>${second}</li><li>${third}</li></ol>` + "<center><a href=\"test.html\"><button class=\"submit-btn\" style=\"font-size: 1.4em;\">Return to test</button></a><br><span class=\"hub-support\">(Your results will be lost cause I don't know how to implement cookies/databases)</span></center>t"
 })
