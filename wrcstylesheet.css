@@ -147,18 +147,17 @@ ol.results li {
 	padding: 0;
 }
 
-a.text-link {
+.text-link {
 	text-decoration: none;
 	padding: 0.1px;
 	border-bottom: 1.3px solid #556b2f;
 	color: #556b2f;
 	transition: all 0.2s;
-	margin-left: auto;
 }
 
-a.text-link:hover {
+.text-link:hover {
 	text-decoration: none;
-	border-bottom: 1.3px solid #454b39;
+	border-bottom: 1.3px solid black;
 	color: black;
 }
 
