@@ -147,7 +147,7 @@ ol.results li {
 	padding: 0;
 }
 
-ol.results li a {
+a.text-link {
 	text-decoration: none;
 	padding: 0.1px;
 	border-bottom: 1.3px solid #556b2f;
@@ -156,7 +156,7 @@ ol.results li a {
 	margin-left: auto;
 }
 
-ol.results li a:hover {
+a.text-link:hover {
 	text-decoration: none;
 	border-bottom: 1.3px solid #454b39;
 	color: black;
