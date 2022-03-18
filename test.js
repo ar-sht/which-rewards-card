@@ -1967,7 +1967,8 @@ document.querySelector('form').addEventListener('submit', function (e) {
     } else if (topCardScores[i] in creditCardsAmerExec && !(topCardScores[i-1] in creditCardsAmerExec || topCardScores[i-2] in creditCardsAmerExec)) {
       topThree.push(creditCardsAmerExec[topCardScores[i]])
     }
-    if (topCardScores[i] === undefined) {
+    if (topThree[i] === undefined) {
+      topCardScores.pop()
       i--
     }
   }
