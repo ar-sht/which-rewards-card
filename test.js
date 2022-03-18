@@ -9,20 +9,18 @@ document.querySelector('form').addEventListener('submit', function (e) {
   const hotel = Number(document.querySelector('#hotel').value)
   const store = Number(document.querySelector('#store').value)
   const dining = Number(document.querySelector('#dining').value)
-  const weight = Number(document.querySelector('#use').value)/10
+  const weight = Number(document.querySelector('#use').value)
 
-  let ihg
-  let hilton
-  let hyatt
-  let marriott
-  let alaska
-  let american
-  let delta
-  let jetblue
-  let southwest
-  let united
-
-  // TODO Ifs for each supported airport
+  let ihg = 1
+  let hilton = 1
+  let hyatt = 1
+  let marriott = 1
+  let alaska = 1
+  let american = 1
+  let delta = 1
+  let jetblue = 1
+  let southwest = 1
+  let united = 1
 
   if (port === 'atl') {
     alaska = 0.0100
@@ -406,19 +404,29 @@ document.querySelector('form').addEventListener('submit', function (e) {
   let cardListUnitedMarriott = []
 
   let score
+  let ih
+  let hil
+  let hy
+  let mar
+  let ak
+  let am
+  let dl
+  let jb
+  let sw
+  let un
 
   // amex
   for (score of cardList.slice(0, 6)) {
-  let ih = 0
-  let hil = hilton * 2
-  let hy = 0
-  let mar = marriott
-  let ak = 0
-  let am = 0
-  let dl = delta
-  let jb = jetblue * 0.8
-  let sw = 0
-  let un = 0
+  ih = 0
+  hil = hilton * 2
+  hy = 0
+  mar = marriott
+  ak = 0
+  am = 0
+  dl = delta
+  jb = jetblue * 0.8
+  sw = 0
+  un = 0
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -450,16 +458,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Delta
   for (let score of cardList.slice(6, 10)) {
-  let ih = 0
-  let hil = 0
-  let hy = 0
-  let mar = 0
-  let ak = 0
-  let am = 0
-  let dl = delta
-  let jb = 0
-  let sw = 0
-  let un = 0
+  ih = 0
+  hil = 0
+  hy = 0
+  mar = 0
+  ak = 0
+  am = 0
+  dl = delta
+  jb = 0
+  sw = 0
+  un = 0
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -491,16 +499,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Hilton
   for (score of cardList.slice(10, 13)) {
-  let ih = 0
-  let hil = hilton
-  let hy = 0
-  let mar = 0
-  let ak = 0
-  let am = 0
-  let dl = 0.1 * delta
-  let jb = 0
-  let sw = 0
-  let un = 0.1 * united
+  ih = 0
+  hil = hilton
+  hy = 0
+  mar = 0
+  ak = 0
+  am = 0
+  dl = 0.1 * delta
+  jb = 0
+  sw = 0
+  un = 0.1 * united
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -532,16 +540,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Marriott
   for (score of cardList.slice(13, 16)) {
-  let ih = 0
-  let hil = 0
-  let hy = 0
-  let mar = marriott
-  let ak = (1 / 3) * alaska
-  let am = (1 / 3) * american
-  let dl = (1 / 3) * delta
-  let jb = (1 / 6) * jetblue
-  let sw = (1 / 3) * southwest
-  let un = (1.1 / 3) * united
+  ih = 0
+  hil = 0
+  hy = 0
+  mar = marriott
+  ak = (1 / 3) * alaska
+  am = (1 / 3) * american
+  dl = (1 / 3) * delta
+  jb = (1 / 6) * jetblue
+  sw = (1 / 3) * southwest
+  un = (1.1 / 3) * united
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -573,16 +581,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Chase
   for (score of cardList.slice(16, 18)) {
-  let ih = ihg
-  let hil = 0
-  let hy = hyatt
-  let mar = marriott
-  let ak = 0
-  let am = 0
-  let dl = 0
-  let jb = jetblue
-  let sw = southwest
-  let un = united
+  ih = ihg
+  hil = 0
+  hy = hyatt
+  mar = marriott
+  ak = 0
+  am = 0
+  dl = 0
+  jb = jetblue
+  sw = southwest
+  un = united
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -614,16 +622,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Southwest
   for (score of cardList.slice(18, 21)) {
-  let ih = 0
-  let hil = 0
-  let hy = 0
-  let mar = 0
-  let ak = 0
-  let am = 0
-  let dl = 0
-  let jb = 0
-  let sw = southwest
-  let un = 0
+  ih = 0
+  hil = 0
+  hy = 0
+  mar = 0
+  ak = 0
+  am = 0
+  dl = 0
+  jb = 0
+  sw = southwest
+  un = 0
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -655,16 +663,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // United
   for (score of cardList.slice(21, 25)) {
-  let ih = 0
-  let hil = 0
-  let hy = 0
-  let mar = 0
-  let ak = 0
-  let am = 0
-  let dl = 0
-  let jb = 0
-  let sw = 0
-  let un = united
+  ih = 0
+  hil = 0
+  hy = 0
+  mar = 0
+  ak = 0
+  am = 0
+  dl = 0
+  jb = 0
+  sw = 0
+  un = united
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -696,16 +704,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // IHG
   for (score of cardList.slice(25, 27)) {
-  let ih = ihg
-  let hil = 0
-  let hy = 0
-  let mar = 0
-  let ak = 0.2 * alaska
-  let am = 0.2 * american
-  let dl = 0.2 * delta
-  let jb = 0.2 * jetblue
-  let sw = 0
-  let un = 0.2 * united
+  ih = ihg
+  hil = 0
+  hy = 0
+  mar = 0
+  ak = 0.2 * alaska
+  am = 0.2 * american
+  dl = 0.2 * delta
+  jb = 0.2 * jetblue
+  sw = 0
+  un = 0.2 * united
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -737,16 +745,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Hyatt
   for (score of cardList.slice(27, 28)) {
-  let ih = 0
-  let hil = 0
-  let hy = hyatt
-  let mar = 0
-  let ak = 0
-  let am = 0.4 * american
-  let dl = 0.4 * delta
-  let jb = 0
-  let sw = (2.4 / 5) * southwest
-  let un = 0.4 * united
+  ih = 0
+  hil = 0
+  hy = hyatt
+  mar = 0
+  ak = 0
+  am = 0.4 * american
+  dl = 0.4 * delta
+  jb = 0
+  sw = (2.4 / 5) * southwest
+  un = 0.4 * united
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -778,16 +786,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // Citi
   for (score of cardList.slice(28, 29)) {
-  let ih = 0
-  let hil = 0
-  let hy = 0
-  let mar = 0
-  let ak = 0
-  let am = 0
-  let dl = 0
-  let jb = jetblue
-  let sw = 0
-  let un = 0
+  ih = 0
+  hil = 0
+  hy = 0
+  mar = 0
+  ak = 0
+  am = 0
+  dl = 0
+  jb = jetblue
+  sw = 0
+  un = 0
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -819,16 +827,16 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
   // American
   for (score of cardList.slice(29, 32)) {
-  let ih = 0
-  let hil = 0
-  let hy = 0
-  let mar = 0
-  let ak = 0
-  let am = american
-  let dl = 0
-  let jb = 0
-  let sw = 0
-  let un = 0
+  ih = 0
+  hil = 0
+  hy = 0
+  mar = 0
+  ak = 0
+  am = american
+  dl = 0
+  jb = 0
+  sw = 0
+  un = 0
   cardListAlaskaIHG.push(weightedAvg(ih, ak, weight) * score)
   cardListAmericanIHG.push(weightedAvg(ih, am, weight) * score)
   cardListDeltaIHG.push(weightedAvg(ih, dl, weight) * score)
@@ -1959,7 +1967,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
     } else if (topCardScores[i] in creditCardsAmerExec && !(topCardScores[i-1] in creditCardsAmerExec || topCardScores[i-2] in creditCardsAmerExec)) {
       topThree.push(creditCardsAmerExec[topCardScores[i]])
     }
-    if ((topThree[i] === undefined)) {
+    if (topCardScores[i] === undefined) {
       i--
     }
   }
